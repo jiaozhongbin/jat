@@ -7,7 +7,7 @@ package cn.suning.automation.config;
  */
 public interface Const {
 	/**
-	 * 默认编码类型
+	 * 默认编码类型UTF-8
 	 */
 	String DEFAULT_ENCODING = "UTF-8";
 	/**
