@@ -32,12 +32,11 @@ public class LoginPage extends LoadableComponent<LoginPage> {
 	/**
 	 * 退出
 	 */
-	@FindBy(xpath = "//*[@id='_mail_component_37_37']/a")
+	@FindBy(xpath = "//a[text()='退出']")
 	private WebElement loginout;
 	
-	public LoginPage(Prop prop,String browserType){
+	public LoginPage(Prop prop){
 		this.prop = prop;
-		DriverFactory.initWebDriver(browserType);
 		PageFactory.initElements(DriverFactory.driver, this);
 		BrowserKeyword.browserMaximize();		
 	}

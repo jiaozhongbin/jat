@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import cn.suning.automation.keyword.BrowserKeyword;
 import cn.suning.automation.keyword.CommonKeyword;
 import cn.suning.automation.keyword.DriverFactory;
+import cn.suning.automation.keyword.VerifyKeyword;
 import cn.suning.automation.keyword.WebElementKeyword;
 import cn.suning.automation.util.prop.Prop;
 
@@ -46,6 +47,8 @@ public class HomePage {
 		WebElement sendMailBtn = WebElementKeyword.findElement(prop.getLocator("writeMail.sendMailBtn")); 
 		WebElementKeyword.elementClick(sendMailBtn);
 		CommonKeyword.sleep(2000);
+		//验证发送是否成功
+		VerifyKeyword.isElementVisible(prop.getLocator("writeMail.sendMailSuccess"), 5);
 	}
 
 }

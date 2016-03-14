@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27008" started-at="2016-03-14T02:01:35Z" finished-at="2016-03-14T02:02:02Z">
+  <suite name="Default suite" duration-ms="33789" started-at="2016-03-14T03:30:46Z" finished-at="2016-03-14T03:31:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27008" started-at="2016-03-14T02:01:35Z" finished-at="2016-03-14T02:02:02Z">
+    <test name="Default test" duration-ms="33789" started-at="2016-03-14T03:30:46Z" finished-at="2016-03-14T03:31:20Z">
       <class name="cn.suning.automation.testSuite.mail163.TestSuite02">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@2551f563]" name="beforeMethod" is-config="true" duration-ms="15" started-at="2016-03-14T10:01:35Z" finished-at="2016-03-14T10:01:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="beforeMethod" is-config="true" duration-ms="6605" started-at="2016-03-14T11:30:47Z" finished-at="2016-03-14T11:30:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc01_Login()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@2551f563]" name="tc01_Login" duration-ms="10965" started-at="2016-03-14T10:01:35Z" finished-at="2016-03-14T10:01:46Z">
+        <test-method status="PASS" signature="tc01_Login()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="tc01_Login" duration-ms="6741" started-at="2016-03-14T11:30:53Z" finished-at="2016-03-14T11:31:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc01_Login -->
-        <test-method status="PASS" signature="tc02_writeMail()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@2551f563]" name="tc02_writeMail" duration-ms="14092" started-at="2016-03-14T10:01:46Z" finished-at="2016-03-14T10:02:00Z">
+        <test-method status="PASS" signature="tc02_writeMail()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="tc02_writeMail" duration-ms="18406" started-at="2016-03-14T11:31:00Z" finished-at="2016-03-14T11:31:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc02_writeMail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@2551f563]" name="afterMethod" is-config="true" duration-ms="1918" started-at="2016-03-14T10:02:00Z" finished-at="2016-03-14T10:02:02Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="afterMethod" is-config="true" duration-ms="2017" started-at="2016-03-14T11:31:18Z" finished-at="2016-03-14T11:31:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

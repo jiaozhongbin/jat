@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.os.WindowsUtils;
 
 /**
  * 
@@ -24,8 +25,7 @@ import org.openqa.selenium.WebDriverException;
  * @version 1.0.0
  * @author jiaozhongbin
  */
-public class BrowserKeyword extends DriverFactory{
-
+public class BrowserKeyword extends DriverFactory {
 
 	private static Logger log = Logger.getLogger(BrowserKeyword.class);
 
@@ -100,12 +100,12 @@ public class BrowserKeyword extends DriverFactory{
 	 * @param screenPath
 	 *            截屏文件存放地址
 	 * @author jiaozhongbin
-	 * @throws IOException 
+	 * @throws IOException
 	 */
-	public static void browserSnapshot(String fileName,String screenPath) throws IOException {
+	public static void browserSnapshot(String fileName, String screenPath) throws IOException {
 		StringBuffer sb = new StringBuffer();
 		TakesScreenshot ts = (TakesScreenshot) driver;
-		if(StringUtils.isNotBlank(fileName)){
+		if (StringUtils.isNotBlank(fileName)) {
 			sb.append(fileName);
 		}
 		sb.append(String.valueOf(new Date().getTime())).append(".jpg");// 截图文件名称
@@ -167,27 +167,28 @@ public class BrowserKeyword extends DriverFactory{
 	public static Set<String> getWindowHandlers() {
 		return driver.getWindowHandles();
 	}
+
 	/**
 	 * 
-	 * 功能描述:For an HTML element, this method returns a WebElement 
-     * For a decimal, a Double is returned 
-	 * For a non-decimal number, a Long is returned 
-	 * For a boolean, a Boolean is returned 
-	 * For all other cases, a String is returned. 
-	 * For an array, return a List<Object> with each object following the rules above. We support nested lists. 
-	 * Unless the value is null or there is no return value, in which null is returned 
-
+	 * 功能描述:For an HTML element, this method returns a WebElement For a decimal,
+	 * a Double is returned For a non-decimal number, a Long is returned For a
+	 * boolean, a Boolean is returned For all other cases, a String is returned.
+	 * For an array, return a List<Object> with each object following the rules
+	 * above. We support nested lists. Unless the value is null or there is no
+	 * return value, in which null is returned
+	 * 
 	 * @author jiaozhongbin
 	 */
-	public static Object executeJScript(String js){
-		return ((JavascriptExecutor)driver).executeScript(js); 
+	public static Object executeJScript(String js) {
+		return ((JavascriptExecutor) driver).executeScript(js);
 	}
-	
+
 	/**
 	 * 
 	 * 功能描述:处理潜在的1个alert（javascript弹出框）
+	 * 
 	 * @param option
-	 *         true or false
+	 *            true or false
 	 * @author jiaozhongbin
 	 */
 	public static boolean dealPotentialAlert(boolean option) {
@@ -224,5 +225,17 @@ public class BrowserKeyword extends DriverFactory{
 			log.info("没有发现 alert弹出框!");
 		}
 		return flag;
+	}
+
+	/**
+	 * 
+	 * 功能描述:清除当前所有的浏览器进程，包括IE、Firefox、Chrome。可作为容错步骤使用
+	 * 
+	 * @author jiaozhongbin
+	 */
+	public static void killAllBrowsers() {
+		WindowsUtils.tryToKillByName("firefox.exe");
+		WindowsUtils.tryToKillByName("iexplore.exe");
+		WindowsUtils.tryToKillByName("chrom.exe");
 	}
 }
