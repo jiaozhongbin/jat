@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
 
 /**
@@ -254,12 +255,34 @@ public class BrowserKeyword extends DriverFactory {
 			WindowsUtils.tryToKillByName(browserName);
 		}
 	}
+
 	/**
 	 * 
 	 * 功能描述:获取当前页面URL
+	 * 
 	 * @author jiaozhongbin
 	 */
-	public static String getBrowserUrl(){
+	public static String getBrowserUrl() {
 		return driver.getCurrentUrl();
+	}
+
+	/**
+	 * 
+	 * 功能描述:根据输入的像素距离滚动条向下移动，缺省值为-1，表示移动至页尾。为0时，表示移动至页头。
+	 * @param height
+	 *         滚动距离
+	 * @author jiaozhongbin
+	 */
+	public static void scrollVerticalBar(int height) {
+		Long totalHeight = (Long) executeJScript("return document.body.scrollHeight");
+		String js = "";
+		if (height == 0) {
+			js = "window.scrollTo(0, 0)";
+		} else if (height == -1) {
+			js = "window.scrollTo(0, " + totalHeight + ")";
+		} else {
+			js = "window.scrollTo(0, " + height + ")";
+		}
+		executeJScript(js);
 	}
 }
