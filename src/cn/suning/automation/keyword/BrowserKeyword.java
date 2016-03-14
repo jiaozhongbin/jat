@@ -236,6 +236,22 @@ public class BrowserKeyword extends DriverFactory {
 	public static void killAllBrowsers() {
 		WindowsUtils.tryToKillByName("firefox.exe");
 		WindowsUtils.tryToKillByName("iexplore.exe");
-		WindowsUtils.tryToKillByName("chrom.exe");
+		WindowsUtils.tryToKillByName("chrome.exe");
+	}
+
+	/**
+	 * 
+	 * 功能描述:清除指定浏览器进程
+	 * 
+	 * @param browserName
+	 *            浏览器进程名称
+	 * @author jiaozhongbin
+	 */
+	public static void killBrowserByName(String browserName) {
+		if (StringUtils.isBlank(browserName)) {
+			throw new NullPointerException("浏览器进程名称为null");
+		} else {
+			WindowsUtils.tryToKillByName(browserName);
+		}
 	}
 }
