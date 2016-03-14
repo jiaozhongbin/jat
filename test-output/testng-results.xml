@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33789" started-at="2016-03-14T03:30:46Z" finished-at="2016-03-14T03:31:20Z">
+  <suite name="Default suite" duration-ms="9062" started-at="2016-03-14T07:11:46Z" finished-at="2016-03-14T07:11:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33789" started-at="2016-03-14T03:30:46Z" finished-at="2016-03-14T03:31:20Z">
-      <class name="cn.suning.automation.testSuite.mail163.TestSuite02">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="beforeMethod" is-config="true" duration-ms="6605" started-at="2016-03-14T11:30:47Z" finished-at="2016-03-14T11:30:53Z">
+    <test name="Default test" duration-ms="9062" started-at="2016-03-14T07:11:46Z" finished-at="2016-03-14T07:11:56Z">
+      <class name="cn.suning.automation.test.getBrowserUrl">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:cn.suning.automation.test.getBrowserUrl@5dac767c]" name="beforeMethod" is-config="true" duration-ms="1544" started-at="2016-03-14T15:11:46Z" finished-at="2016-03-14T15:11:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="tc01_Login()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="tc01_Login" duration-ms="6741" started-at="2016-03-14T11:30:53Z" finished-at="2016-03-14T11:31:00Z">
+        <test-method status="PASS" signature="tc01_chrome()[pri:0, instance:cn.suning.automation.test.getBrowserUrl@5dac767c]" name="tc01_chrome" duration-ms="4284" started-at="2016-03-14T15:11:48Z" finished-at="2016-03-14T15:11:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc01_Login -->
-        <test-method status="PASS" signature="tc02_writeMail()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="tc02_writeMail" duration-ms="18406" started-at="2016-03-14T11:31:00Z" finished-at="2016-03-14T11:31:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc02_writeMail -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cn.suning.automation.testSuite.mail163.TestSuite02@61dd6a83]" name="afterMethod" is-config="true" duration-ms="2017" started-at="2016-03-14T11:31:18Z" finished-at="2016-03-14T11:31:20Z">
+        </test-method> <!-- tc01_chrome -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:cn.suning.automation.test.getBrowserUrl@5dac767c]" name="afterMethod" is-config="true" duration-ms="3216" started-at="2016-03-14T15:11:52Z" finished-at="2016-03-14T15:11:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- cn.suning.automation.testSuite.mail163.TestSuite02 -->
+      </class> <!-- cn.suning.automation.test.getBrowserUrl -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
