@@ -95,8 +95,8 @@ public class BrowserKeyword extends DriverFactory {
 	 * 
 	 * 功能描述:浏览器截屏
 	 * 
-	 * @param driver
-	 *            浏览器驱动
+	 * @param fileName
+	 *            截屏文件名称
 	 * @param screenPath
 	 *            截屏文件存放地址
 	 * @author jiaozhongbin
@@ -185,13 +185,13 @@ public class BrowserKeyword extends DriverFactory {
 
 	/**
 	 * 
-	 * 功能描述:处理潜在的1个alert（javascript弹出框）
+	 * 功能描述:弹框点击操作
 	 * 
 	 * @param option
 	 *            true or false
 	 * @author jiaozhongbin
 	 */
-	public static boolean dealPotentialAlert(boolean option) {
+	public static boolean clickAlert(boolean option) {
 		// 是否存在
 		boolean flag = false;
 		// 异常捕获
@@ -253,5 +253,13 @@ public class BrowserKeyword extends DriverFactory {
 		} else {
 			WindowsUtils.tryToKillByName(browserName);
 		}
+	}
+	/**
+	 * 
+	 * 功能描述:获取当前页面URL
+	 * @author jiaozhongbin
+	 */
+	public static String getBrowserUrl(){
+		return driver.getCurrentUrl();
 	}
 }
