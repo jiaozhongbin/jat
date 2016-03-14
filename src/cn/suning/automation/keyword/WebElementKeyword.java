@@ -159,7 +159,7 @@ public class WebElementKeyword extends DriverFactory {
 	 * @param value
 	 *            待粘贴的值
 	 * @author jiaozhongbin
-	 * @throws AWTException 
+	 * @throws AWTException
 	 */
 	public static void keyBoardCtrlV(String value) throws AWTException {
 		StringSelection stringSelection = new StringSelection(value);
@@ -179,7 +179,7 @@ public class WebElementKeyword extends DriverFactory {
 	 * 功能描述:键盘操作-Tab
 	 * 
 	 * @author jiaozhongbin
-	 * @throws AWTException 
+	 * @throws AWTException
 	 */
 	public static void keyBoardTab() throws AWTException {
 		Robot robot = new Robot();
