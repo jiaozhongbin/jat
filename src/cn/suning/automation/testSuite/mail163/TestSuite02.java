@@ -52,13 +52,10 @@ public class TestSuite02 {
 			BrowserKeyword.browserSnapshot("writeMailSuccess",prop.get("snapshotPath"));
 			log.info("测试写信用例end");
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
