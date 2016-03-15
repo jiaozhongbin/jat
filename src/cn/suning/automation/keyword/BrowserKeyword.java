@@ -15,7 +15,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.os.WindowsUtils;
 
 /**
@@ -263,6 +262,7 @@ public class BrowserKeyword extends DriverFactory {
 	 * @author jiaozhongbin
 	 */
 	public static String getBrowserUrl() {
+		
 		return driver.getCurrentUrl();
 	}
 
