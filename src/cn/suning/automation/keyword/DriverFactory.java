@@ -56,7 +56,10 @@ public class DriverFactory {
 		} else if (browserType.equals(Const.BROWSER_TYPE.Firefox.toString())) {// 打开火狐浏览器
 			System.setProperty("webdriver.firefox.bin", PropKit.use("globalConfig.properties").get("DriverExePath_FireFox"));
 			driver = new FirefoxDriver();
-		} else {
+		}else if (browserType.equals(Const.BROWSER_TYPE.Sougou.toString())) {// 打开火狐浏览器
+			System.setProperty("webdriver.chrome.bin", PropKit.use("globalConfig.properties").get("DriverExePath_Sougou"));
+			driver = new ChromeDriver();
+		}  else {
 			log.error("浏览器类型字段输入报错.");
 			return null;
 		}

@@ -18,7 +18,7 @@ public interface Const {
 	 * 浏览器类型(IE、Chrome、Firefox)
 	 */
 	public enum BROWSER_TYPE {
-		IE, Chrome, Firefox
+		IE, Chrome, Firefox,Sougou
 	}
 
 	/**
