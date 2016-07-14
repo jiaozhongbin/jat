@@ -15,11 +15,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * 
- * 功能描述:页面元素关键字
- * 
- * @date 2016-3-7 15:22:48
- * @version 1.0.0
- * @author jiaozhongbin
+ * 功能描述： 页面元素关键字
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:54:26 
+ * @version 1.0 
+ * @parameter 
+ * @return
  */
 public class WebElementKeyword extends DriverFactory {
 	private static Logger log = Logger.getLogger(WebElementKeyword.class);

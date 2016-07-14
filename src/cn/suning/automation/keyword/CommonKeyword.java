@@ -4,11 +4,12 @@ import org.apache.log4j.Logger;
 
 /**
  * 
- * 功能描述: 通用关键字
- * 
- * @date 2016-3-7 15:22:48
- * @version 1.0.0
- * @author jiaozhongbin
+ * 功能描述： 通用关键字
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:53:52 
+ * @version 1.0 
+ * @parameter 
+ * @return
  */
 public class CommonKeyword {
 	private static Logger log = Logger.getLogger(CommonKeyword.class);

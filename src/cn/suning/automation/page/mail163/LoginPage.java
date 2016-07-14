@@ -12,6 +12,15 @@ import cn.suning.automation.keyword.VerifyKeyword;
 import cn.suning.automation.keyword.WebElementKeyword;
 import cn.suning.automation.util.prop.Prop;
 
+/**
+ * 
+ * 功能描述： 163登陆页
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:58:17 
+ * @version 1.0 
+ * @parameter 
+ * @return
+ */
 public class LoginPage extends LoadableComponent<LoginPage> {
 	private Prop prop;
 	/**

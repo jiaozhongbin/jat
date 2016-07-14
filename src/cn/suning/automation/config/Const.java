@@ -4,6 +4,8 @@ package cn.suning.automation.config;
 
 /**
  * Global constants definition
+ * @author JIAOZHONGBIN
+ *
  */
 public interface Const {
 	/**

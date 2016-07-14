@@ -18,9 +18,10 @@ import cn.suning.automation.util.prop.PropKit;
 
 /**
  * 
- * 功能描述:163测试套
- * 
- * @author jiaozhongbin
+ * 功能描述： 163测试套
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:59:01 
+ * @version 1.0 
  */
 public class TestSuite02 {
 

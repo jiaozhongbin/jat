@@ -7,11 +7,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * 
- * 功能描述:页面校验关键字
- * 
- * @date 2016年3月10日15:51:37
- * @version 1.0.0
- * @author jiaozhongbin
+ * 功能描述： 页面校验关键字
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:54:17 
+ * @version 1.0 
+ * @parameter 
+ * @return
  */
 public class VerifyKeyword extends DriverFactory {
 

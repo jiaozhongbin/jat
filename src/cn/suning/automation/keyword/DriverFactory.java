@@ -17,11 +17,12 @@ import cn.suning.automation.util.prop.PropKit;
 
 /**
  * 
- * 功能描述:驱动管理类
- * 
- * @date 2016-3-7 15:22:48
- * @version 1.0.0
- * @author jiaozhongbin
+ * 功能描述： 驱动管理类
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:54:03 
+ * @version 1.0 
+ * @parameter 
+ * @return
  */
 public class DriverFactory {
 	private static Logger log = Logger.getLogger(DriverFactory.class);

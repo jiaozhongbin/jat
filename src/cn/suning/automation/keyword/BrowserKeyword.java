@@ -19,11 +19,10 @@ import org.openqa.selenium.os.WindowsUtils;
 
 /**
  * 
- * 功能描述: 页面关键字之浏览器操作关键字
- * 
- * @date 2016-3-7 15:22:48
- * @version 1.0.0
- * @author jiaozhongbin
+ * 功能描述： 页面关键字之浏览器操作关键字
+ * @author JIAOZHONGBIN
+ * @date 创建时间：2016年7月14日 下午2:52:27 
+ * @version 1.0 
  */
 public class BrowserKeyword extends DriverFactory {
 
